@@ -1,0 +1,13 @@
+[[plugins]]
+package = "netlify-plugin-container"
+
+  [plugins.inputs]
+  image = "chenzhaoyu94/chatgpt-web"
+  port = "3002"
+  environment = [
+    "OPENAI_API_KEY=your_openai_api_key",
+    "OPENAI_API_MODEL=gpt-3.5-turbo-16k",
+    "AUTH_SECRET_KEY=your_auth_secret_key",
+    "MAX_REQUEST_PER_HOUR=0",
+    "TIMEOUT_MS=60000"
+  ]
